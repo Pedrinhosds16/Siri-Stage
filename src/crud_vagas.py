@@ -1,5 +1,5 @@
 import json
-import os
+import os                                               #tirar todos os inputs
 
 CAMINHO = "vagas.json"
 
@@ -76,6 +76,17 @@ def excluir_vaga():
             print("Número inválido.")
     except ValueError:
         print("Entrada inválida.")
+
+
+
+
+
+
+
+
+
+
+        #menu pra ve se ta pegando
 
 def menu():
     while True:
