@@ -114,3 +114,31 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+
+
+
+
+
+#minha parte modificada
+
+def listar_vagas():
+    return carregar_vagas()
+
+def editar_vaga(index, novos_dados):
+    vagas = carregar_vagas()
+    if 0 <= index < len(vagas):
+        vaga = vagas[index]
+        vaga["titulo"] = novos_dados.get("titulo", vaga["titulo"])
+        vaga["empresa"] = novos_dados.get("empresa", vaga["empresa"])
+        vaga["local"] = novos_dados.get("local", vaga["local"])
+        salvar_vagas(vagas)
+        return True
+    return False
+
+def excluir_vaga(index):
+    vagas = carregar_vagas()
+    if 0 <= index < len(vagas):
+        vaga_removida = vagas.pop(index)
+        salvar_vagas(vagas)
+        return vaga_removida
+    return None
