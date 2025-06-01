@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
 
 
-#minha parte modificada
+#minha parte modificada (cauã)
 
 def listar_vagas():
     return carregar_vagas()
