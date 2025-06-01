@@ -68,7 +68,7 @@ def excluir_vaga():
     try:
         escolha = int(input("Digite o número da vaga que deseja excluir: ")) - 1
         if 0 <= escolha < len(vagas): 
-            #verifica se o valor é negativo e dps verifica se o valor esta dentro da lista/ isso n é chat gpt n, sou eu caua pq eu n entendi essa     parte direito KKKKK
+            #verifica se o valor é negativo e dps verifica se o valor esta dentro da lista/ isso n é chat gpt n, sou eu caua pq eu n entendi essa  parte direito KKKKK
             vaga_removida = vagas.pop(escolha)
             salvar_vagas(vagas)
             print(f"✅ Vaga '{vaga_removida['titulo']}' removida com sucesso.")
