@@ -29,3 +29,4 @@ def obter_candidato_por_indice(indice): # Obtém um candidato específico pelo �
         return candidatos[indice] # Retorna o candidato correspondente ao índice
     return None
 
+
