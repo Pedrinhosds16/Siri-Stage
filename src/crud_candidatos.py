@@ -28,3 +28,4 @@ def obter_candidato_por_indice(indice): # Obtém um candidato específico pelo �
     if 0 <= indice < len(candidatos): # Verifica se o índice está dentro do intervalo válido
         return candidatos[indice] # Retorna o candidato correspondente ao índice
     return None
+
